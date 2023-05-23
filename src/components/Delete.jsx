@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 
 class Delete extends Component {
+  
+  
   render() {
+    const {handleDelete, id} =this.props
     return (
       <div>
-        <button>Delete</button>
+        <button onClick={()=>handleDelete(id)}>Delete</button>
       </div>
     );
   }
